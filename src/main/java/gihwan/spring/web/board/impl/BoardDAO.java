@@ -27,7 +27,6 @@ public class BoardDAO {
 
 	public void insertBoard(BoardVO vo) {
 		System.out.println("JDBC로 insertBoard() 기능처리");
-		log.info("[INSERT]");
 		try {
 			conn = JDBCUtil.getConnection();
 			pstmt = conn.prepareStatement(BOARD_INSERT);
@@ -44,7 +43,6 @@ public class BoardDAO {
 
 	public void updateBoard(BoardVO vo) {
 		System.out.println("JDBC로 updateBoard() 기능처리");
-		log.info("[UPDATE]");
 		try {
 			conn = JDBCUtil.getConnection();
 			pstmt = conn.prepareStatement(BOARD_UPDATE);
@@ -61,7 +59,6 @@ public class BoardDAO {
 
 	public void deleteBoard(BoardVO vo) {
 		System.out.println("JDBC로 deleteBoard() 기능처리");
-		log.info("[DELETE]");
 		try {
 			conn = JDBCUtil.getConnection();
 			pstmt = conn.prepareStatement(BOARD_DELETE);

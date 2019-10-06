@@ -26,8 +26,7 @@ public class BoardServiceClient {
 		// 4. 글 검색 기능 테스트
 		List<BoardVO> boaList = boardService.getBoardList(vo);
 		for (BoardVO board : boaList) {
-			log.info("========>"+ board.toString());
-			//System.out.println("---> " + board.toString());
+			System.out.println("---> " + board.toString());
 		}
 		// 5. 스프링 컨테이너 종료
 		container.close();
